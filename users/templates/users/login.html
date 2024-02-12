@@ -3,3 +3,7 @@
     {{ form.as_p }}
     <input type="submit">
 </form>
+<form method="POST" action="{% url 'logout' %}">
+    {% csrf_token %}
+    <button type="submit">logout</button>
+</form>
